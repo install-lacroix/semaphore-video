@@ -1,0 +1,18 @@
+
+
+---
+  - name: Windows Update
+    hosts: windows
+    tasks:
+      - name: Install all update
+        ansible.windows.win_updates:
+          category_names:
+            - SecurityUpdates
+            - CriticalUpdates
+            - Update Rollups
+            - Updates
+            - Application
+            - Definition Updates
+          log_path: C:\ansible_wu.txt
+
+
