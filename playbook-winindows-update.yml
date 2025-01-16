@@ -2,7 +2,7 @@
 
 ---
   - name: Windows Update
-    hosts: windows:vars
+    hosts: windows
     tasks:
       - name: Install all update
         ansible.windows.win_updates:
