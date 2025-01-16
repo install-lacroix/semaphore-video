@@ -13,6 +13,9 @@
             - Updates
             - Application
             - Definition Updates
-          log_path: C:\ansible_wu.txt
+        vars:
+           ansible_become_user: "{{ administrateur }}"
+           ansible_become_password: "{{ Comete@44 }}"
+           log_path: C:\ansible_wu.txt
 
 
